@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drag and drop</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+
+
+<div class="wrapper">
+	<div class="wrapper-header">/ Drag'n'drop
+		<div class="menu-button">
+			<div class="menu-line"></div>
+			<div class="menu-line"></div>
+			<div class="menu-line"></div>
+		</div>
+	</div>
+
+	<!-- this part -->
+
+	<div class="empty">
+		<div class="fill" draggable="true" style="background: url(img/fill.jpeg)"></div>
+	</div>
+	<div class="empty">
+		<div class="fill" draggable="true" style="background: url(img/fill2.jpeg)"></div>
+	</div>
+	<div class="empty"></div>
+	<div class="empty"></div>
+	<div class="empty"></div>
+	<div class="empty"></div>
+
+	<!-- /this part -->
+
+</div>
+
+<script type="text/javascript" src="js/dragitems.js"></script>
+
+<script type="text/javascript">
+
+	// set class of content box and class of item innner
+
+	initDragAndDrop('.empty', '.fill');
+
+</script>
+</body>
+</html>
